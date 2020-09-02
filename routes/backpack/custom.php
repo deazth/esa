@@ -14,5 +14,12 @@ Route::group([
     ],
     'namespace'  => 'App\Http\Controllers\Admin',
 ], function () { // custom admin routes
+    Route::get('dashboard', 'StaffDashController@dashboard')->name('backpack.dashboard');
+
+    // pregenerated CRUD route
     Route::crud('applicantgroup', 'ApplicantGroupCrudController');
+    Route::crud('state', 'StateCrudController');
+    Route::crud('application', 'ApplicationCrudController');
+    Route::get('charts/application-status', 'Charts\ApplicationStatusChartController@response')->name('charts.application-status.index');
+    Route::crud('application_contact', 'Application_contactCrudController');
 }); // this should be the absolute last line of this file

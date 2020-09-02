@@ -21,8 +21,13 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function index()
+    public function index(Request $req)
     {
-        return view('home');
+      // get list of applications
+
+
+        return view('home', [
+          'user' => $req->user()
+        ]);
     }
 }

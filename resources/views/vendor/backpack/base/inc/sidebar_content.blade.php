@@ -10,3 +10,6 @@
 </li>
 
 <li class='nav-item'><a class='nav-link' href='{{ backpack_url('applicantgroup') }}'><i class='nav-icon la la-question'></i> ApplicantGroups</a></li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('state') }}'><i class='nav-icon la la-question'></i> States</a></li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('application') }}'><i class='nav-icon la la-question'></i> Applications</a></li>
+<li class='nav-item'><a class='nav-link' href='{{ backpack_url('application_contact') }}'><i class='nav-icon la la-question'></i> Application Contacts</a></li>
